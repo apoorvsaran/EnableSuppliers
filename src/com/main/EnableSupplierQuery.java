@@ -93,8 +93,8 @@ public class EnableSupplierQuery {
 		System.out.println(countSupplier+" suppliers in the input file");
 		
 		//Depot Query
-		String first = "insert into scnrd.depot_allocation_status(supplier_id,depot_id, test_allocation_effective_start_date,test_allocation_effective_end_date)  values('";
-		String last = "','"+depotId+"','"+startDate+"','"+endDate+"');";
+		String first = "insert into scnrd.depot_allocation_status(supplier_id,depot_id, test_allocation_effective_start_date,test_allocation_effective_end_date,created_on)  values('";
+		String last = "','"+depotId+"','"+startDate+"','"+endDate+"','"+startDate+"');";
 		String query = "";
 		
 		BufferedWriter writer = new BufferedWriter(new FileWriter(queryFilePath));
